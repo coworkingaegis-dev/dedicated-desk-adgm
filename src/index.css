@@ -1,0 +1,52 @@
+@import '@fontsource-variable/bricolage-grotesque/opsz.css';
+@import '@fontsource-variable/figtree';
+
+:root {
+  /* Porcelain + bottle green: calm, premium, high-contrast */
+  --porcelain: #f4f5f2;
+  --white: #ffffff;
+  --ink: #0c1a15;
+  --muted: #4f5c56;
+  --line: #dde3df;
+  --line-strong: #c9d3ce;
+  --bottle: #0f2e24;
+  --bottle-2: #143a2e;
+  --green: #1f5c46;    /* Aegis brand green */
+  --green-dark: #174a38;
+  --mint: #cde6d9;
+  --mint-soft: #e7f2ec;
+  --gold: #c9a96a;     /* thin accents on dark only */
+
+  --display: 'Bricolage Grotesque Variable', 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
+  --sans: 'Figtree Variable', 'Figtree', 'Segoe UI', system-ui, sans-serif;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --hd-h: 72px;
+  --gutter: clamp(20px, 4vw, 44px);
+  --r-xl: 28px;
+  --r-lg: 20px;
+  --r-md: 14px;
+  --shadow: 0 1px 2px rgba(12, 26, 21, .05), 0 18px 40px -24px rgba(12, 26, 21, .28);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--hd-h) + 16px); -webkit-text-size-adjust: 100%; }
+html, body { width: 100%; overflow-x: clip; }
+html.menu-locked { overflow: hidden; }
+body { font-family: var(--sans); font-size: 1.0625rem; line-height: 1.65; color: var(--ink); background: var(--porcelain); -webkit-font-smoothing: antialiased; }
+h1, h2 { font-family: var(--display); font-weight: 600; line-height: 1.04; letter-spacing: -0.025em; font-optical-sizing: auto; }
+h3, h4 { font-family: var(--sans); font-weight: 700; line-height: 1.3; }
+img, svg { display: block; max-width: 100%; }
+img { height: auto; }
+a { color: inherit; }
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+ul, ol { list-style: none; }
+address { font-style: normal; }
+table { border-collapse: collapse; width: 100%; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; border-radius: 4px; }
+::selection { background: var(--mint); color: var(--ink); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
