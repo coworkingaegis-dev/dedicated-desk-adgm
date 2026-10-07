@@ -21,7 +21,7 @@ export function Answer() {
             lowest-cost workspace that satisfies ADGM's physical-presence requirement.
           </p>
           <p>
-            At <a href={`${MAIN_SITE}/`}>Aegis Coworking</a>, the dedicated desk space in ADGM sits on the 38th
+            At Aegis Coworking, the dedicated desk space in ADGM sits on the 38th
             floor of Addax Tower and costs AED 1,150 a month. It is the desk for an ADGM licence that most new
             companies choose, and it qualifies as the ADGM flexi desk requirement for your business licence.
           </p>
@@ -70,7 +70,7 @@ export function Price() {
             <div><dt>Deposit, setup &amp; admin fees</dt><dd>AED 0</dd></div>
             <div className="calc-total"><dt>Total for {months} months</dt><dd key={`t${months}`}>{aed(total)}</dd></div>
           </dl>
-          <p className="calc-note">ADGM government fees are separate. Prices as published on <a href={`${MAIN_SITE}/office-space`}>aegiscoworking.ae</a>.</p>
+          <p className="calc-note">ADGM government fees are separate. Published monthly prices.</p>
           <a className="btn btn-mint" href={`${BUSINESS.whatsapp}?text=${encodeURIComponent(`Hi Aegis, I'm interested in a ${months}-month dedicated desk in ADGM.`)}`} target="_blank" rel="noopener noreferrer">
             Ask about a {months}-month desk
           </a>
@@ -124,8 +124,7 @@ export function Compare() {
           </table>
         </div>
         <p className="fine">
-          Unsure which desk your licence needs? Read{' '}
-          <a href={`${MAIN_SITE}/blog/adgm-tech-startup-licence-dedicated-desk`}>Tech Start-Up licence: dedicated desk or flexi desk ADGM?</a>
+          Unsure which desk your licence needs? Read
         </p>
       </div>
     </section>
@@ -147,7 +146,6 @@ export function Audiences() {
             <Reveal as="li" key={a.title} delay={i * 70}>
               <h3>{a.title}</h3>
               <p>{a.text}</p>
-              <a href={`${MAIN_SITE}/blog/${a.link.slug}`}>{a.link.text}<Icon name="arrow" size={15} /></a>
             </Reveal>
           ))}
         </ul>
@@ -173,10 +171,6 @@ export function Licence() {
             </li>
           ))}
         </Reveal>
-        <p className="fine">
-          Before you apply, read <a href={`${MAIN_SITE}/blog/adgm-license-workspace-questions-before-applying`}>questions to ask about your ADGM licence workspace</a>{' '}
-          and <a href={`${MAIN_SITE}/blog/accessrp-adgm-lease-registration`}>how AccessRP lease registration works</a>.
-        </p>
       </div>
     </section>
   )
