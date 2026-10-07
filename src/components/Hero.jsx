@@ -39,12 +39,12 @@ function Hero() {
             <span className="pulse" aria-hidden="true" />Level 38, Addax Tower, Al Reem Island
           </p>
           <h1 id="hero-title" className="hero-title hl" style={{ '--d': 1 }}>
-            Dedicated desk in ADGM, yours every day
+            Dedicated desk in ADGM for solo founders
           </h1>
           <p className="hero-lead hl" style={{ '--d': 2 }}>
-            An ADGM-compliant dedicated desk for AED 1,150 a month — your own permanent desk with a
-            registered ADGM business address for your licence, a lease registered on AccessRP and 24/7
-            access. Only AED 150 more than a flexi desk in ADGM.
+            Running a one-person ADGM company? An ADGM-compliant dedicated desk gives you a permanent desk with a
+            registered ADGM business address for your licence, a lease registered on AccessRP and 24/7 access —
+            AED 1,150 a month, only AED 150 more than a flexi desk in ADGM.
           </p>
           <div className="hero-ctas hl" style={{ '--d': 3 }}>
             <a className="btn btn-dark" href={`${BUSINESS.whatsapp}?text=${encodeURIComponent('Hi Aegis, I would like to reserve a dedicated desk in ADGM.')}`} target="_blank" rel="noopener noreferrer">Reserve a desk</a>
