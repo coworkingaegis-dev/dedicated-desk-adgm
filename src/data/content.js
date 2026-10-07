@@ -13,9 +13,9 @@ import receptionImg from '../assets/reception-adgm.webp'
 
 export const SITE_URL = 'https://dedicateddeskadgm.online'
 export const MAIN_SITE = 'https://www.aegiscoworking.ae'
-export const PAGE_TITLE = 'Dedicated Desk in ADGM for AED 1,150/month | Aegis Coworking'
+export const PAGE_TITLE = 'Dedicated Desk ADGM for Solo Founders & Licence Holders'
 export const PAGE_DESCRIPTION =
-  'Dedicated desk in ADGM at Addax Tower for AED 1,150/month — your own desk, registered ADGM business address and ADGM-compliant lease. No deposit. Book a tour.'
+  'Dedicated desk ADGM for solo founders: your own desk with an office address suitable for an ADGM licence, an AccessRP lease and 24/7 access — AED 1,150/month.'
 export const DATE_PUBLISHED = '2026-10-06'
 export const DATE_MODIFIED = '2026-10-06'
 
@@ -108,14 +108,10 @@ export const steps = [
 ]
 
 // Genuine reviews published on aegiscoworking.ae
+// Two genuine member reviews, word for word — a different pair on each site
 export const testimonials = [
-  { quote: 'Aegis coworking provide super professional services especially with the pricing, and the customer service, i needed the license and a space for one of my team member and they did all within a week time, my team member loved the space. I will highly suggest if any on is looking to get a license and a space in ADGM go for Aegis coworking.', name: 'Ubaid Zia', role: 'Startup Founder' },
-  { quote: 'Very happy with the service from Aegis Coworking. We needed a professional business address in Abu Dhabi without committing to a large traditional office, and Aegis provided a practical solution. The team is responsive and professional.', name: 'Uzair Tahir', role: 'Tech Startup Founder' },
   { quote: 'I was specifically looking for the cheapest coworking space in ADGM and wanted a privacy environment rather than just a desk. Aegis offered a good balance of price, location, and facilities.', name: 'Naveeda Haseeb', role: 'Startup Founder' },
-  { quote: 'We were comparing affordable coworking space in ADGM and found Aegis to be a very practical choice. The workspace feels professional while keeping costs affordable.', name: 'John Paints', role: 'Software Analyst' },
-  { quote: 'For businesses looking for a low cost office in ADGM, Aegis provides flexible office space and a professional seating. The team made the setup process very easy.', name: 'Haseeb Awan', role: 'Entrepreneur' },
   { quote: 'Aegis Coworking is a convenient workspace in Abu Dhabi for startups and growing companies. The flexible workspace options, meeting room and hot desk helped us avoid the commitment of a traditional office.', name: 'Kasim Malikkandy', role: 'Consultant' },
-  { quote: 'Nice suitable area for coworking for Adam incorporation.', name: 'Ali Kutty Faizy', role: 'Entrepreneur' },
 ]
 
 export const guides = [
@@ -134,7 +130,6 @@ export const faqs = [
   {
     q: 'How much is a dedicated desk in ADGM?',
     a: 'A dedicated desk at Aegis Coworking in Addax Tower is AED 1,150 per month — only AED 150 more than a flexi desk at AED 1,000. A one-time AED 1,200 due-diligence fee applies, and ADGM government fees are charged separately. There is no deposit, no admin fee and no setup fee.',
-    link: { text: 'ADGM coworking cost guide for 2026', url: `${MAIN_SITE}/blog/adgm-coworking-space-cost-2026` },
   },
   {
     q: 'What is the difference between a dedicated desk and a flexi desk in ADGM?',
@@ -147,17 +142,16 @@ export const faqs = [
   {
     q: 'Can I register my ADGM company with a dedicated desk?',
     a: 'Yes. The dedicated desk includes a registered ADGM business address and an ADGM-compliant lease registered on AccessRP, which you can use for your ADGM licence application and renewals.',
-    link: { text: 'AccessRP lease registration explained', url: `${MAIN_SITE}/blog/accessrp-adgm-lease-registration` },
   },
   {
     q: 'Is a dedicated desk enough for a solo business in ADGM?',
     a: 'For most solo founders and consultants, yes. A dedicated desk gives you the registered address and physical presence ADGM looks for, at a fraction of the cost of a private office. Firms regulated by the FSRA usually need a private office instead.',
-    link: { text: 'Is a dedicated desk enough for a solo ADGM business?', url: `${MAIN_SITE}/blog/adgm-flexi-desk-enough-solo-business` },
+    link: { text: 'Is a flexi desk enough for a solo business?', url: 'https://www.aegiscoworking.ae/blog/adgm-flexi-desk-enough-solo-business' },
   },
   {
     q: 'Can I get employee visas with a dedicated desk in ADGM?',
     a: 'Visa capacity in ADGM depends on your workspace type and licence. A dedicated desk can support visa applications; the number allowed is set by ADGM rules, so check your plan with us before hiring.',
-    link: { text: 'ADGM coworking visa quota: visas per desk', url: `${MAIN_SITE}/blog/adgm-coworking-visa-quota-employees-per-desk` },
+    link: { text: 'Dedicated desk visa capacity vs seating', url: 'https://www.aegiscoworking.ae/blog/adgm-dedicated-desk-visa-capacity-vs-seating' },
   },
   {
     q: 'What is the cheapest desk in ADGM at Aegis?',
@@ -178,20 +172,25 @@ export const faqs = [
   {
     q: 'Can two companies use the same dedicated desk address?',
     a: 'Each ADGM company needs its own qualifying workspace and registered address arrangement. Ask us about setups for more than one company.',
-    link: { text: 'Can two ADGM companies share a registered address?', url: `${MAIN_SITE}/blog/adgm-shared-registered-address-multiple-companies` },
   },
   {
     q: 'Can I work from home and keep a dedicated desk for my licence?',
     a: 'Many members use their dedicated desk as the company\'s registered ADGM address and physical base while working flexibly. Your licence obligations still apply, so read our guide first.',
-    link: { text: 'Running your ADGM company from home with a coworking address', url: `${MAIN_SITE}/blog/adgm-work-from-home-registered-address` },
   },
   {
     q: 'Where is the dedicated desk located?',
     a: 'On the 38th floor of Addax Tower, 3812, Al Reem Island, Abu Dhabi — inside the ADGM jurisdiction, with sea views.',
-    link: { text: 'Addax Tower ADGM for businesses', url: `${MAIN_SITE}/blog/addax-tower-adgm-business-workspace` },
   },
   {
     q: 'Can I see the desk before signing?',
     a: 'Yes. Free tours run Monday to Friday, 9 AM–6 PM, or we can send a video walkthrough on WhatsApp. Call +971 50 392 6316 or email contact@aegiscoworking.ae.',
+  },
+  {
+    q: 'Can I keep a dedicated desk if I travel a lot?',
+    a: 'Yes. Your desk and ADGM business address stay yours while you travel, and with 24/7 access you can work whenever you are in Abu Dhabi.',
+  },
+  {
+    q: 'When should a solo founder move to a private office?',
+    a: 'When you start hiring or need a lockable room for client meetings, you can move into a private office from AED 4,500 a month on the same floor.',
   },
 ]
