@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Reveal } from './Motion'
 import Icon from './Icon'
-import { testimonials, guides, faqs, images, BUSINESS, MAIN_SITE } from '../data/content'
+import { testimonials, faqs, images, BUSINESS } from '../data/content'
 import { PhoneLink } from './Navbar'
 
 const initials = (n) => n.split(' ').map((p) => p[0]).slice(0, 2).join('')
@@ -13,7 +13,7 @@ export function Reviews() {
       <div className="wrap">
         <div className="head head-row">
           <h2 id="rev-title">What desk members say about Aegis</h2>
-          <p>Founders, consultants and startups who rent desk space in ADGM with us. Reviews as published on <a href={`${MAIN_SITE}/`}>aegiscoworking.ae</a>.</p>
+          <p>Founders, consultants and startups who rent desk space in ADGM with us. Read more reviews on Google: <a href={BUSINESS.mapsUrl} target="_blank" rel="noopener noreferrer">Aegis Coworking</a>.</p>
         </div>
         <div className="rev-grid">
           <Reveal as="figure" className="rev-feat" variant="left">
@@ -43,29 +43,6 @@ export function Reviews() {
   )
 }
 
-export function Guides() {
-  return (
-    <section className="guides sec" id="guides" aria-labelledby="guides-title">
-      <div className="wrap">
-        <div className="head head-row">
-          <h2 id="guides-title">ADGM desk guides from our blog</h2>
-          <p>Licences, visas, registered addresses and costs — read before you choose a desk. <a href={`${MAIN_SITE}/blogs`}>All articles</a></p>
-        </div>
-        <ul className="g-grid">
-          {guides.map((g, i) => (
-            <Reveal as="li" key={g.slug} delay={(i % 3) * 60}>
-              <a href={g.url}>
-                <span className="g-tag">{g.tag}</span>
-                <span className="g-title">{g.title}</span>
-                <span className="g-go" aria-hidden="true"><Icon name="arrow" size={16} /></span>
-              </a>
-            </Reveal>
-          ))}
-        </ul>
-      </div>
-    </section>
-  )
-}
 
 export function FAQ() {
   return (
@@ -101,8 +78,7 @@ export function Location() {
           <h2 id="loc-title">Dedicated desk ADGM Abu Dhabi: Addax Tower, Al Reem Island</h2>
           <p className="loc-sub">
             Addax Tower sits inside the Abu Dhabi Global Market jurisdiction on Al Reem Island — so your
-            desk carries a genuine ADGM address, without ADGM Square prices.{' '}
-            <a href={`${MAIN_SITE}/addax-tower-al-reem-island`}>About Addax Tower</a>
+            desk carries a genuine ADGM address, without ADGM Square prices.
           </p>
           <dl className="nap">
             <div><dt>Address</dt><dd>{BUSINESS.name}, {BUSINESS.street}, {BUSINESS.city}, {BUSINESS.country}</dd></div>
